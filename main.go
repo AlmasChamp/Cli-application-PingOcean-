@@ -79,10 +79,11 @@ func doIt(ctx context.Context, ch chan string, wg *sync.WaitGroup, mutex *sync.M
 // 	mp := make(map[string]int)
 
 // 	input := gen(urls)
-// 	c1 := sq(input)
-// 	c2 := sq(input)
+// 	ch1 := sq(input)
+// 	ch2 := sq(input)
+// 	ch3 := sq(input)
 
-// 	for n := range merge(search, mp, c1, c2) {
+// 	for n := range merge(search, mp, ch1, ch2, ch3) {
 // 		fmt.Println(n)
 // 	}
 // 	fmt.Println("End")
