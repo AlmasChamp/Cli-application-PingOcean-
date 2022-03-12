@@ -4,3 +4,7 @@ run:
 
 build :
 	go build -o bin/main main.go
+
+docker :
+	docker build -t pingocean .
+	docker run pingocean
